@@ -1,9 +1,9 @@
 let boxes = document.querySelectorAll(".box");
-let rbtn = document.querySelectorAll("#rbtn");
+let rbtn = document.querySelector("#rbtn");
 let turnO = true;
-let newbtn = document.querySelectorAll("#new-btn");
-let msgContainer = document.querySelectorAll(".msg-con");
-let msg = document.querySelectorAll("#msg");
+let newbtn = document.querySelector("#new-btn");
+let msgContainer = document.querySelector(".msg-con");
+let msg = document.querySelector("msg");
 
 const winpatterns =[
     [0,1,2],
@@ -61,7 +61,7 @@ boxes.forEach((box) => {
 
 
 
-    function checkwinner() {
+    const checkwinner=() =>{
     for (let patterns of winpatterns) {
         //  console.log(patterns[0] , patterns[1], patterns[2]);
         //  console.log(boxes[patterns[0]].innerText ,
